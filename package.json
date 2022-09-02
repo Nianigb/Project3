@@ -1,0 +1,19 @@
+{
+  "name": "project3",
+  "version": "1.0.0",
+  "description": "project3",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nianigb/Project3.git"
+  },
+  "author": "Anissa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nianigb/Project3/issues"
+  },
+  "homepage": "https://github.com/Nianigb/Project3#readme"
+}
