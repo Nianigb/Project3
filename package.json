@@ -4,7 +4,8 @@
   "description": "project3",
   "main": "index.js",
   "scripts": {
-    "test": "npm start"
+    "test": "npm start",
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style expanded --no-source-map"
   },
   "repository": {
     "type": "git",
