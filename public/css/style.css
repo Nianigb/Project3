@@ -1,3 +1,28 @@
+<<<<<<< HEAD
 .logo {
   text-align: center;
 }
+=======
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Shrikhand");
+html,
+body {
+  font-family: "Roboto";
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.content {
+  width: 100%;
+  height: auto;
+}
+
+.logo {
+  font: "Shrikhand";
+}
+>>>>>>> 24e498be924476b0f2ca63bdd517af74218560d3

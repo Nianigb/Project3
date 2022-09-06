@@ -16,5 +16,6 @@
   "bugs": {
     "url": "https://github.com/Nianigb/Project3/issues"
   },
-  "homepage": "https://github.com/Nianigb/Project3#readme"
+  "homepage": "https://github.com/Nianigb/Project3#readme",
+  "devDependencies": {}
 }
