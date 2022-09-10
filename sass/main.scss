@@ -1,29 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto");
-@import url("https://fonts.googleapis.com/css?family=Shrikhand");
-
-$font-stack: 'Roboto';
-$font-logo-title: 'Shrikhand';
-$primary-color: #9356DC;
-$secondary-color: #FF79DA;
-$tiers-color: #99E2D0;
-
-html,
-body {
-    font-family: "Roboto";
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-.content {
-    width: 100%;
-    height: auto;
-}
-
-.logo {
-    font: $font-logo-title;
-}
+@import "./bases/bases";
+@import "./utile/variables";
+@import "./Layout/header";
+@import "./pages/acceuil";
+@import "./Layout/footer";

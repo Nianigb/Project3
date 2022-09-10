@@ -1,0 +1,98 @@
+.recherche {
+  background-color: $back-color;
+  height: 40px;
+  line-height: 35px;
+  margin: -10px;
+}
+
+.fas.fa-map-marker-alt {
+  margin-right: 20px;
+}
+
+.content {
+  width: 100%;
+  height: auto;
+
+
+  .explorer {
+    text-align: center;
+    background-color:$explorer-back;
+    margin-top: -20px;
+  }
+
+  .bouton-explorer {
+    border-radius: 25px;
+    max-width: 240px;
+    height: 50px;
+    line-height: 45px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
+    background: linear-gradient(350deg, $primary-color 30%, $secondary-color 100%);
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+.fonctionnement {
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  .bouton-fonction {
+    display: flex;
+    background-color: $bouton-fonction-back;
+    align-items: center;
+    border: 2px solid #ededed;
+    border-radius: 32px;
+    width: 15%;
+    height: 85px;
+    justify-content: center;
+    align-content: center;
+    margin-top: 15px;
+    box-shadow: 3px 5px 11px -5px #0000005c;
+
+    .chiffres {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 38px;
+      border-radius: 50%;
+      color: white;
+      background-color: $primary-color;
+      margin-left: -77px;
+    }
+
+    .description {
+      margin-left: 15px;
+
+      .fa-solid {
+        margin-right: 10px;
+      }
+    }
+
+  }
+}
+.cadres-restaurants{
+  display: flex;
+  background-color: $bouton-fonction-back;
+  justify-content: space-around;
+
+  .img-restaurants{
+    width: 372px;
+    height: 249px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+}

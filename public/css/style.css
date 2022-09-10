@@ -17,6 +17,120 @@ body {
   height: auto;
 }
 
+/*.logo {
+    font: $font-logo-title;
+}
+*/
 .logo {
-  font: "Shrikhand";
+  text-align: center;
+  box-shadow: 0 0 9px 1px;
+  padding: 10px;
+}
+
+.titre {
+  text-align: center;
+}
+
+.recherche {
+  background-color: #E7E7E7;
+  height: 40px;
+  line-height: 35px;
+  margin: -10px;
+}
+
+.fas.fa-map-marker-alt {
+  margin-right: 20px;
+}
+
+.content {
+  width: 100%;
+  height: auto;
+}
+.content .explorer {
+  text-align: center;
+  background-color: #F7F7F7;
+  margin-top: -20px;
+}
+.content .bouton-explorer {
+  border-radius: 25px;
+  max-width: 240px;
+  height: 50px;
+  line-height: 45px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  margin-left: 15%;
+  margin-right: 15%;
+  background: linear-gradient(350deg, #9356DC 30%, #FF79DA 100%);
+  justify-content: center;
+  align-items: center;
+}
+
+.fonctionnement {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+@media screen and (max-width: 768px) {
+  .fonctionnement {
+    flex-direction: column;
+  }
+}
+.fonctionnement .bouton-fonction {
+  display: flex;
+  background-color: rgba(237, 237, 237, 0.3411764706);
+  align-items: center;
+  border: 2px solid #ededed;
+  border-radius: 32px;
+  width: 15%;
+  height: 85px;
+  justify-content: center;
+  align-content: center;
+  margin-top: 15px;
+  box-shadow: 3px 5px 11px -5px rgba(0, 0, 0, 0.3607843137);
+}
+.fonctionnement .bouton-fonction .chiffres {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 38px;
+  border-radius: 50%;
+  color: white;
+  background-color: #9356DC;
+  margin-left: -77px;
+}
+.fonctionnement .bouton-fonction .description {
+  margin-left: 15px;
+}
+.fonctionnement .bouton-fonction .description .fa-solid {
+  margin-right: 10px;
+}
+
+.cadres-restaurants {
+  display: flex;
+  background-color: rgba(237, 237, 237, 0.3411764706);
+  justify-content: space-around;
+}
+.cadres-restaurants .img-restaurants {
+  width: 372px;
+  height: 249px;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+footer {
+  background-color: gray;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.white-logo {
+  max-width: 6%;
+  filter: invert(1);
 }
