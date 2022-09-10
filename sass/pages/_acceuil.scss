@@ -83,6 +83,7 @@
 
   }
 }
+
 .cadres-restaurants{
   display: flex;
   background-color: $bouton-fonction-back;
@@ -94,5 +95,9 @@
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
   }
 }
