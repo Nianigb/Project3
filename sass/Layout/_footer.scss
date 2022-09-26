@@ -1,13 +1,31 @@
 footer {
-    background-color: gray;
+    background-color: rgb(50, 50, 50);
     color: white;
-}
 
-ul {
-    list-style-type: none;
-}
+    .white-logo {
+        max-width: 6%;
+        margin-left: 40px;
+        margin-top: 20px;
+        filter: invert(1);
+    
+        @media screen and (max-width: 768px) {
+            max-width: 36%;
+        }
+    }
 
-.white-logo {
-    max-width: 6%;
-    filter: invert(1);
+    ul {
+        list-style-type: none;
+    }
+
+    span {
+        display: flex;
+        align-items: center;
+        margin-bottom: 4px;
+
+        .fa-solid {
+            max-width: 14px;
+            margin-right: 20px;
+        }
+    }
+
 }

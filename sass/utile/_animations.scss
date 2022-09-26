@@ -1,0 +1,14 @@
+@keyframes coeur{
+    from{
+        opacity: 0;
+        color: $secondary-color;
+    }
+    20%{
+        font-weight: 700;
+    }
+    to{
+        font-weight: 700;
+        opacity: 1;
+        color: $secondary-color;
+    }
+}
