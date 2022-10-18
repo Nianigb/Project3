@@ -191,6 +191,10 @@ body {
   padding: 50px;
   margin-top: 20px;
 
+  @media screen and (max-width: 768px) {
+  padding: 0;
+  }
+
   h2{
     margin-top : -20px;
   }
@@ -199,6 +203,14 @@ body {
     display: flex;
     justify-content: space-around;
     gap: 55px;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      padding: 20px;
+    }
+    @media screen and (max-width:321px){
+
+    }
   }
 
   .restaurants-img {
@@ -233,10 +245,5 @@ body {
         animation: coeur 1000ms forwards;
       }
     }
-  }
-
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
-    padding: 20px;
   }
 }

@@ -271,6 +271,11 @@ body {
   padding: 50px;
   margin-top: 20px;
 }
+@media screen and (max-width: 768px) {
+  .cadres-restaurants {
+    padding: 0;
+  }
+}
 .cadres-restaurants h2 {
   margin-top: -20px;
 }
@@ -278,6 +283,12 @@ body {
   display: flex;
   justify-content: space-around;
   gap: 55px;
+}
+@media screen and (max-width: 768px) {
+  .cadres-restaurants .restaurants {
+    flex-direction: column;
+    padding: 20px;
+  }
 }
 .cadres-restaurants .restaurants-img {
   background-color: white;
@@ -305,12 +316,6 @@ body {
 }
 .cadres-restaurants .description-restaurant .fa-regular:hover {
   animation: coeur 1000ms forwards;
-}
-@media screen and (max-width: 768px) {
-  .cadres-restaurants {
-    flex-direction: column;
-    padding: 20px;
-  }
 }
 
 footer {
