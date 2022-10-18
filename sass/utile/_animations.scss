@@ -1,14 +1,61 @@
-@keyframes coeur{
-    from{
+@keyframes coeur {
+    from {
         opacity: 0;
         color: $secondary-color;
     }
-    20%{
+
+    20% {
         font-weight: 700;
     }
-    to{
+
+    to {
         font-weight: 700;
         opacity: 1;
         color: $secondary-color;
+    }
+}
+
+@keyframes apparitionmenus {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+#animation1 {
+    animation-delay: 0.3s;
+}
+
+#animation2 {
+    animation-delay: 0.7s;
+}
+
+#animation3 {
+    animation-delay: 0.9s;
+}
+
+@keyframes spin {
+    0% {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes disapear {
+    0% {
+        visibility: visible;
+        opacity: 0.5
+    }
+
+    100% {
+        opacity: 0.25;
     }
 }

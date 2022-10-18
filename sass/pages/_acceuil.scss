@@ -3,6 +3,33 @@ body {
   color: $font-color;
 }
 
+.loader {
+  background-color: $font-color;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: disapear 2s;
+  visibility: hidden;
+  opacity: 0.5;
+}
+
+.spinner {
+  /* Light grey */
+  border: 16px solid $white-color;
+  /* Blue */
+  border-top: 16px solid $primary-color;
+  border-radius: 50%;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  animation: spin 2s linear;
+  display: flex;
+  opacity: 1;
+}
+
 .img-logo {
   width: auto;
 
@@ -78,7 +105,7 @@ body {
     background-color: $bouton-fonction-back;
     align-items: center;
     border-radius: 32px;
-    width: 15%;
+    width: 26%;
     height: 85px;
     justify-content: center;
     align-content: center;
@@ -95,6 +122,11 @@ body {
       align-items: center;
       width: 250px;
       justify-content: space-evenly;
+      margin: 100px;
+
+      @media screen and (max-width: 768px) {
+        margin: unset;
+      }
     }
 
     .chiffres {
@@ -106,7 +138,7 @@ body {
       border-radius: 50%;
       color: white;
       background-color: $primary-color;
-      margin-left: -25px;
+      margin-left: -34px;
     }
   }
 }
@@ -125,10 +157,10 @@ body {
   .description-nouv {
     text-align: center;
     position: absolute;
-    top: 85%;
-    margin-left: 15%;
+    top: 570px;
+    margin-left: 280px;
     color: darkolivegreen;
-    background: lightgreen;
+    background: $font-vert;
     border-radius: 2px;
     font-weight: bold;
     padding-left: 15px;
@@ -155,11 +187,19 @@ body {
 
 
 .cadres-restaurants {
-  display: flex;
   background-color: $bouton-fonction-back;
-  justify-content: space-around;
   padding: 50px;
-  gap: 55px;
+  margin-top: 20px;
+
+  h2{
+    margin-top : -20px;
+  }
+
+  .restaurants {
+    display: flex;
+    justify-content: space-around;
+    gap: 55px;
+  }
 
   .restaurants-img {
     background-color: white;

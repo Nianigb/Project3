@@ -34,7 +34,7 @@
     height: 613px;
 
     @media screen and (max-width: 767px) {
-        height: unset;
+        height: 300px;
     }
 }
 
@@ -124,7 +124,7 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    background-color: $font-vert;
+                    background-color: #99E2D0;
                     width: 100px;
                     color: white;
 
@@ -160,11 +160,12 @@
         background: linear-gradient(350deg, $primary-color 30%, $secondary-color 100%);
         justify-content: center;
         align-items: center;
+       
 
         @media screen and (max-width: 768px) {
             line-height: unset;
             margin-left: 25%;
-            margin-right: 25%;
+            margin-right: 25%; 
             margin-top: 30px;
             margin-bottom: 30px;
         }
@@ -174,4 +175,4 @@
         box-shadow: 0 0 16px 0 rgba(119, 119, 119, 0.5);
         opacity: 0.9;
     }
-}
+} 
