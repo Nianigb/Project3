@@ -84,8 +84,12 @@ body {
       margin-right: 25%;
       max-width: 250px;
     }
-  }
 
+    &:hover {
+      box-shadow: 0 0 16px 0 rgba(119, 119, 119, 0.5);
+      opacity: 0.7;
+    }
+  }
 }
 
 .fonctionnement {
