@@ -17,5 +17,7 @@
     "url": "https://github.com/Nianigb/Project3/issues"
   },
   "homepage": "https://github.com/Nianigb/Project3#readme",
-  "devDependencies": {}
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
 }

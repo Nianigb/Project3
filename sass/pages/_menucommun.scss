@@ -1,30 +1,24 @@
 .header {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 
     .arrow {
-
-        /* top: 131px; */
-        left: 5px;
         line-height: 73px;
-        margin-left: -230px;
+        padding-left: 20px;
         font-size: x-large;
-
-        @media screen and (max-width: 767px) {
-            margin: -7px auto -1px 0px;
-        }
-
+        display: flex;
     }
 }
 
 .img-logo {
+    padding-right: 20px;
     display: flex;
+    width: 100%;
+    justify-content: center;
 
-    @media screen and (max-width: 767px) {
-        width: 75%;
-        height: 40px;
-        margin-left: 41px;
+    @media screen and (max-width: 1024px) {
+        height: 35px;
     }
 }
 
@@ -34,7 +28,7 @@
     height: 613px;
 
     @media screen and (max-width: 767px) {
-        height: 300px;
+        height: unset;
     }
 }
 
@@ -49,18 +43,15 @@
 
         .francaise {
             font-family: $font-logo-title;
-            display: flex;
-            justify-content: space-between;
+
+            @media screen and (max-width: 767px) {
+                display: flex;
+                justify-content: space-between;
+            }
         }
 
+
         .fa-heart {
-            margin-right: 20px;
-
-            @media screen and (max-width: 768px) {
-                margin-left: 13%;
-                margin-right: 0;
-            }
-
             &:hover {
                 animation: coeur 1000ms forwards;
             }
@@ -68,7 +59,7 @@
 
         .barre {
             position: relative;
-            background-color: green;
+            background-color: $font-vert;
             height: 5px;
             width: 37px;
             margin-top: -17px;
@@ -120,19 +111,14 @@
                     font-weight: 600;
                 }
 
-                .margintop {
-                    margin-top: -33px;
-                    margin-right: 5px;
-                }
 
                 .check {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    background-color: #99E2D0;
+                    background-color: $font-vert;
                     width: 100px;
                     color: white;
-
                     font-size: x-large;
                     margin-right: -100px;
                     transition-duration: 500ms;
@@ -152,22 +138,30 @@
         }
     }
 
+    .commander {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px auto 30px auto;
+    }
+
     .bouton-commander {
-        margin-top: 20px;
+        font-size: 16px;
         border-radius: 25px;
-        max-width: 240px;
+        width: 235px;
         height: 50px;
         line-height: 45px;
         color: white;
         cursor: pointer;
         display: flex;
-        background: linear-gradient(350deg, $primary-color 30%, $secondary-color 100%);
         justify-content: center;
         align-items: center;
+        border: none;
+        background: linear-gradient(350deg, #9356DC 30%, #FF79DA 100%);
     }
 
     &:hover .bouton-commander {
         box-shadow: 0 0 16px 0 rgba(119, 119, 119, 0.5);
-        opacity: 0.9;
+        opacity: 0.7;
     }
 }
